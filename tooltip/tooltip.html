@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLTIP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        #main_container{
+            width: 1280px;
+            height: 250px;
+            background-color: white;
+            margin-top: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        
+        }
+        #sub_container{
+            width: 100%;
+            height: 95%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            display: flex;
+            
+        }
+        #trst{
+            width: 50%;
+            height: 50%;
+        }
+        #work{
+            width: 50%;
+            height: 100%;
+        }
+        #right_up{
+            height: 50%;
+            width: 100%;
+            display: flex;justify-content: center;
+            align-items: center;
+        }
+        #right_down{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        #bubble{
+            height: 60px;
+            width: 340px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            margin-left: 20px;
+            border-radius: 15px;
+            position: relative;
+            
+        }
+        #bubble::after{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-top: 12px solid black;
+        }
+        #p1{
+            color: white;
+            font-size: 23px;
+        }
+        .dot{
+            height: 3px;
+            width: 3px;
+            background-color: grey;
+            border-radius: 50%;
+            margin-bottom: 50px;
+        }
+        #p2{
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <div id="sub_container">
+            <div id="trst"></div>
+            <div id="work">
+                <div id="right_up">
+                    <div id="bubble">
+                        <p id="p1">Here is everything i have built</p>
+                    </div>
+                </div>
+                <div id="right_down">
+                    <p id="p2">Home </p>
+                    <div class="dot"></div>
+                    <p id="p2">Projects </p>
+                    <div class="dot"></div>
+                    <p id="p2">Blog</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
